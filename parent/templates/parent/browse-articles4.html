@@ -1,0 +1,48 @@
+{% extends 'parent/navbar4.html ' %}
+
+
+{% block content %}
+
+    <br>
+    {% for article in AllArticles %}
+        <div class="container bg-white shadow-md p-5 form-layout">
+            <h3> {{article.title}} </h3>
+            <br>
+
+            {{article.content}}
+
+            <br> <br>
+
+            {{article.date_posted}}
+        
+
+           
+        </div>
+
+    {% endfor %}
+
+     {% for articlee in AllArticlees %}
+        <div class="container bg-white shadow-md p-5 form-layout">
+            <h3> {{articlee.title}} </h3>
+            <br>
+
+            {{articlee.content}}
+
+            <br> <br>
+
+            {{articlee.date_posted}}
+        
+
+           
+        </div>
+
+    {% endfor %}
+
+        
+
+
+
+
+        
+
+{% endblock %}
